@@ -19,6 +19,8 @@ public class typewriter : MonoBehaviour
 	{
 		_text = GetComponent<Text>()!;
 		_tmpProText = GetComponent<TMP_Text>()!;
+		
+
 
 		if (_text != null)
 		{
@@ -27,7 +29,7 @@ public class typewriter : MonoBehaviour
 
 			StartCoroutine("TypeWriterText");
 		}
-
+		
 		if (_tmpProText != null)
 		{
 			writer = _tmpProText.text;
