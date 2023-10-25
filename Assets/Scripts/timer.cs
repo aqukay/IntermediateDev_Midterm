@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class timer : MonoBehaviour
 {
+    //public Animator animator;
+
     Image timerBar;
     public float maxTime = 5f;
     float timeLeft;
@@ -14,6 +16,8 @@ public class timer : MonoBehaviour
     {
         timerBar = GetComponent<Image>();
         timeLeft = maxTime;
+
+        //animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -28,6 +32,5 @@ public class timer : MonoBehaviour
             SceneManager.LoadScene("Main");
             Time.timeScale = 0;
         }
-
     }
 }
